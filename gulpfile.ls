@@ -5,7 +5,7 @@ require! {
 }
 
 gulp.task \clean, ->
-  gulp.src "#{__dirname}/src/js/component"
+  gulp.src "#{__dirname}/src/js/component" read: false
     .pipe clean!
 
 gulp.task \transfer, ["clean"] ->
