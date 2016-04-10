@@ -11,7 +11,7 @@
     "debug-basalt": "npm run build&&pebble install --emulator basalt&& pebble logs",
     "debug-chalk": "npm run build&&pebble install --emulator chalk&& pebble logs",
     "debug-phone": "npm run build&&pebble install --phone $PHONE --logs",
-    "server": "lsc app.ls"
+    "server": "gulp web"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,11 @@
     "express": "^4.13.4",
     "gulp": "^3.9.0",
     "gulp-clean": "^0.3.2",
+    "gulp-develop-server": "^0.5.1",
     "gulp-livescript": "^3.0.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.5",
     "livescript": "^1.4.0"
   }
 }
