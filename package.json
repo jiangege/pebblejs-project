@@ -10,7 +10,8 @@
     "debug": "npm run build&&pebble install --emulator aplite&& pebble logs",
     "debug-basalt": "npm run build&&pebble install --emulator basalt&& pebble logs",
     "debug-chalk": "npm run build&&pebble install --emulator chalk&& pebble logs",
-    "debug-phone": "npm run build&&pebble install --phone $PHONE --logs"
+    "debug-phone": "npm run build&&pebble install --phone $PHONE --logs",
+    "server": "lsc app.ls"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/pebble/pebblejs#readme",
   "devDependencies": {
+    "express": "^4.13.4",
     "gulp": "^3.9.0",
     "gulp-clean": "^0.3.2",
     "gulp-livescript": "^3.0.0",
