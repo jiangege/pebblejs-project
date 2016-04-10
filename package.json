@@ -2,12 +2,15 @@
   "name": "hello",
   "version": "0.0.0",
   "description": "hello",
+  "config": {
+    "phone": "192.169.1.107"
+  },
   "scripts": {
-    "publish": "gulp ls-compile&&pebble build",
-    "debug": "gulp ls-compile&&pebble build&&pebble install --emulator aplite&& pebble logs",
-    "debug-basalt": "gulp ls-compile&&pebble build&&pebble install --emulator basalt&& pebble logs",
-    "debug-chalk": "gulp ls-compile&&pebble build&&pebble install --emulator chalk&& pebble logs",
-    "debug-phone": "gulp ls-compile&&pebble build&&pebble install --phone 192.168.1.107 --logs"
+    "build": "gulp ls-compile&&pebble build",
+    "debug": "npm run build&&pebble install --emulator aplite&& pebble logs",
+    "debug-basalt": "npm run build&&pebble install --emulator basalt&& pebble logs",
+    "debug-chalk": "npm run build&&pebble install --emulator chalk&& pebble logs",
+    "debug-phone": "npm run build&&pebble install --phone $PHONE --logs"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,7 @@
   "homepage": "https://github.com/pebble/pebblejs#readme",
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.2",
     "gulp-livescript": "^3.0.0",
     "livescript": "^1.4.0"
   }

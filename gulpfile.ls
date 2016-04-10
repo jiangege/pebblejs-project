@@ -1,9 +1,14 @@
 require! {
   gulp
   "gulp-livescript": gulpLiveScript
+  "gulp-clean": clean
 }
 
-gulp.task \transfer, ->
+gulp.task \clean, ->
+  gulp.src "#{__dirname}/src/js/component"
+    .pipe clean!
+
+gulp.task \transfer, ["clean"] ->
   gulp.src "#{__dirname}/js-src/**/!(*.ls)"
     .pipe gulp.dest "#{__dirname}/src/js/"
 
