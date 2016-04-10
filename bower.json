@@ -1,0 +1,18 @@
+{
+  "name": "hello",
+  "description": "hello",
+  "directory": "js-src/components",
+  "authors": [
+    "jiangege <jiangege47@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

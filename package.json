@@ -1,0 +1,27 @@
+{
+  "name": "hello",
+  "version": "0.0.0",
+  "description": "hello",
+  "scripts": {
+    "publish": "gulp ls-compile&&pebble build",
+    "debug": "gulp ls-compile&&pebble build&&pebble install --emulator aplite&& pebble logs",
+    "debug-basalt": "gulp ls-compile&&pebble build&&pebble install --emulator basalt&& pebble logs",
+    "debug-chalk": "gulp ls-compile&&pebble build&&pebble install --emulator chalk&& pebble logs",
+    "debug-phone": "gulp ls-compile&&pebble build&&pebble install --phone 192.168.1.107 --logs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pebble/pebblejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pebble/pebblejs/issues"
+  },
+  "homepage": "https://github.com/pebble/pebblejs#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-livescript": "^3.0.0",
+    "livescript": "^1.4.0"
+  }
+}
